@@ -1,0 +1,20 @@
+{
+  "name": "user-management-system",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadhiqueck/User-Management-Application-.git"
+  },
+  "author": "sadhique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadhiqueck/User-Management-Application-/issues"
+  },
+  "homepage": "https://github.com/sadhiqueck/User-Management-Application-#readme",
+  "description": ""
+}
