@@ -4,7 +4,9 @@ const userController=require("../controllers/userController")
 const {authSession,isLogin}=require("../middlewares/auth.js")
 
 router.get("/login",isLogin,(req,res)=>{
-    res.render('user/login')
+    const smssg= req.query.mssg
+    
+    res.render('user/login',{smssg})
 });
 
 router.get("/register",isLogin,(req,res)=>{
@@ -15,9 +17,9 @@ router.get("/register",isLogin,(req,res)=>{
 router.get("/home",authSession,(req,res)=>{
     res.render('user/home')
 });
-router.get("/logout",authSession,(req,res)=>{
+router.post("/logout",authSession,(req,res)=>{
     req.session.destroy();
-    res.render('user/login',{smssg:"Loggedout Succesfully"})
+    res.redirect('/login?mssg="Logged out Succesfully"')
 });
 
 
@@ -33,7 +35,6 @@ const validateRegisterInput = (req, res, next) => {
 router.post("/register", validateRegisterInput, userController.registerUser);
 
 router.post("/login",userController.login);
-router.post("/logout")
 
 
 module.exports=router
