@@ -22,12 +22,6 @@ It features a user-friendly interface, user authentication, and data storage in 
 - **EJS**: Templating engine for rendering HTML views dynamically.
 - **Passport.js**: Authentication middleware for user login.
 
-## Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/user-management-system.git
-   cd user-management-system
 
 ## Screenshot of Register page
 ![image](https://github.com/user-attachments/assets/0cfd6fa6-b5fc-4318-8a39-d138567454ef)
