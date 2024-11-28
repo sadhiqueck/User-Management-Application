@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +15,16 @@
     "url": "https://github.com/sadhiqueck/User-Management-Application-/issues"
   },
   "homepage": "https://github.com/sadhiqueck/User-Management-Application-#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.8.1",
+    "nocache": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
