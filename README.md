@@ -20,7 +20,7 @@ It features a user-friendly interface, user authentication, and data storage in 
 - **MongoDB**: NoSQL database for storing user data.
 - **Mongoose**: MongoDB object modeling tool for data interaction.
 - **EJS**: Templating engine for rendering HTML views dynamically.
-- **Passport.js**: Authentication middleware for user login.
+- **Auth.js**: Authentication middleware for user login.
 
 
 ## Screenshot of Register page
